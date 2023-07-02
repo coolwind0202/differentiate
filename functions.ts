@@ -8,7 +8,7 @@ type Variable = {
 /**
  * 一般的な関数のオペランド
  */
-type _Operand = number | MathFunction;
+type _Operand = number | Differentiatable;
 
 /**
  * 一般的な二項演算のオペランド
@@ -46,11 +46,11 @@ type Exponentiation = {
   /**
    * 指数
    */
-  exponent: _BinaryOperand;
+  exponent: _Operand;
   /**
    * 底
    */
-  base: _BinaryOperand;
+  base: _Operand;
 };
 
 type Differentiatable = {
