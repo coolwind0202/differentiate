@@ -53,4 +53,6 @@ type Exponentiation = {
   base: _BinaryOperand;
 };
 
-type MathFunction = Variable | Addition | Subtraction | Exponentiation;
+type Differentiatable = {
+  differentiate(): number | Differentiatable;
+};
